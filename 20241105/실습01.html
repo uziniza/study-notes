@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습01</title>
+    <script>
+        console.log(
+            typeof 3 + " isn't " + typeof "3" + " data type"
+        )
+        console.log(
+        "typeof를 array이나 null에 사용하면, " + typeof [0] + "결과를 얻을 수 있습니다."
+        )
+        let math=Number(prompt("수학점수를 입력하세요"))
+        let eng=Number(prompt("영어점수를 입력하세요"))
+        let avg= (math+eng)/2
+        console.log(avg)
+        function multifly(num1,num2){
+            return(num1*num2)
+        }
+        console.log(multifly(3,7))
+        console.log(multifly(2,2))
+        let square = function(num){
+            console.log(num**2)
+        }
+        square(4)
+        square(11)
+        square(5)
+
+    </script>
+</head>
+<body>
+    <h2>실습01</h2>
+</body>
+</html>
+<!-- 함수 만들기2
+• square() 함수를 함수 표현식을 이용해서 만들어주세요!
+• 조건
+• 매개변수로 하나의 숫자를 입력받기
+• 입력받은 수의 제곱을 콘솔창에 출력하는 함수 정의
+• 콘솔창에 출력하고 싶다면 아래처럼 테스트 해보기
+• square(4)// 16
+• square(11); // 121
+• square(5); // 25 -->
+
+<!-- 함수 만들기1
+• multifly() 함수를 함수 선언문 형식으로 만들어주세요!
+• 조건
+• 매개변수로 두 개의 숫자를 입력받기
+• 두 인자의 곱을 ‘반환’ 하는 함수를 정의
+• 콘솔창에 출력하고 싶다면 아래처럼 테스트 해보기
+• console.log(multifly(3,7)); // 21
+• console.log(multifly(2,2)); // 4 -->
+
+<!-- 
+typeof 를 사용해서 아래의 문구를 만드세요
+“” 안의 문구는 typeof 의 결과값으로 출력해야 합니다.
+• 출력 문구
+• “number” isn’t “string” data type.
+• typeof 를 array 이나 null 에 사용하면, “object” 결과를 얻을 수 있습니다. -->
