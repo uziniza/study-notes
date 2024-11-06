@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습_04</title>
+    <script>
+        //0-10사이의 랜덤한 숫자 출력
+        //0-n사이일때 : n+1을 곱해주면됨
+        //20-24일때 : math.random*5+20 -> 똑같이 차잇값+1을 곱해주고 십의자리수 더해줌 
+        console.log(Math.floor(Math.random()*11))
+        let sum=0
+        for(let i=0; i<=100; i++){
+            if(i%2===0 || i%5===0){
+                sum+=i
+            }
+        }
+        console.log(sum)
+        //구구단 만들기
+        for(let i=2;i<10;i++){
+            console.log(`-------${"단"}`)
+            for(let j=1; j<10; j++){
+                console.log(`${i}x${j}=${i*j}`)
+            }
+        }
+        //1000까지의 숫자중에서 13의 배수이면서 홀수인 숫자, 
+        let num = Number(prompt("숫자를 입력하세요"))
+        for(let i=0; i<1000; i++){
+            if(i%13===0 && i%2===1){
+                console.log(i)
+            }
+        }
+        let input = prompt('숫자를 입력해주세요.');
+input = Number(input);
+for (let i = 1; i <= input; i++) {
+  if (i % 13 === 0 && i % 2 === 1) {
+    console.log(i);
+  }
+}
+        //함수표현식
+        let square = function(a){
+            console.log(a**2)
+        }
+        square(3)
+        //함수 선언문
+        let multifly = function(a,b){
+            console.log(a*b)
+        }
+        multifly(3,7)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

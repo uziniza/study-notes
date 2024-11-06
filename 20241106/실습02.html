@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습_02</title>
+    <script>
+        let fruits1 = ["사과", "딸기", "파인애플", "수박", "참외", "오렌지", "자두", "망고"]
+        let fruits2 = ["수박", "사과", "참외", "오렌지", "파인애플", "망고"]
+        let same=[]
+        let diffrent=[]
+        for(let el of fruits1){
+            if (fruits2.includes(el)){
+                same.push(el)
+            }else{diffrent.push(el)}
+        }
+        console.log(same)
+        console.log(diffrent)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
