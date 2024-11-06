@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습03</title>
+    <script>
+        let now = new Date()
+        //if문
+        if(now>0 || now<6){
+            console.log("평일")
+        }else{console.log("주말")}
+
+        if(now === 0 || now === 6){
+            console.log("주말")
+         }else{console.log("평일")}
+            
+        
+        
+        //switch
+        switch(now){
+            case 0 : console.log("주말");
+            break;
+            case 6: console.log("주말");
+            break;
+            default : console.log('평일')
+        }
+        
+        //삼항연산자
+        now = now>0 || now<6 ? console.log("평일"):console.log("주말")
+        now = now ===0 || now===6 ? console.log("주말"):console.log("평일")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습01</title>
+    <script>
+        let arr=[]
+        for(let i=1; i<=100; i++){
+            arr.push(i)
+        }
+        //for 문 사용
+        let sum1=0
+        for(let i=0; i<arr.length; i++){
+            sum1+=arr[i]
+        }
+        console.log(sum1)
+        //for of 문
+        let sum2=0
+        for(let plus of arr){
+            sum2+=plus
+        }
+        console.log(sum2)
+        //forEach문
+        let sum3=0
+        arr.forEach(function(plus2){
+            sum3+=plus2
+        })
+        console.log(sum3)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
