@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>다크 모드</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      /* 기본 라이트 테마 */
+      body.light-mode {
+        background-color: white;
+        color: black;
+      }
+
+      /* 다크 테마 */
+      body.dark-mode {
+        background-color: black;
+        color: white;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body class="light-mode">
+    <h1>다크 모드 전환</h1>
+    <p>이 버튼을 눌러서 모드를 전환해보세요!</p>
+    <button id="theme-toggle" onclick="darkmode()">다크 모드</button>
+    <script>
+      function darkmode() {
+        const body = document.body;
+        const btn = document.getElementById("theme-toggle");
+
+        // 클래스 토글로 모드 전환
+        body.classList.toggle("dark-mode");
+        body.classList.toggle("light-mode");
+
+        // 버튼 텍스트 변경
+        if (body.classList.contains("dark-mode")) {
+          btn.textContent = "라이트 모드";
+        } else {
+          btn.textContent = "다크 모드";
+        }
+      }
+    </script>
+  </body>
+</html>

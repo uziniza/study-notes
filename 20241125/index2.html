@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>텍스트 변경</title>
+    <style>
+      h1 {
+        font-family: Arial, sans-serif;
+        color: blue;
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">여기를 바꿔보세요!</h1>
+    <button id="changeTextButton" onclick="change()">텍스트 변경</button>
+
+    <script>
+      const btn = document.getElementById("changeTextButton");
+      const title = document.querySelector("#title");
+      let isChanged = false;
+      function change() {
+        if (isChanged) {
+          title.innerText = "여기를 바꿔보세요!";
+          title.style.color = "blue";
+        } else {
+          title.innerText = "바뀐 문구입니당 -3-";
+          title.style.color = "coral";
+        }
+        isChanged = !isChanged;
+      }
+    </script>
+  </body>
+</html>
